@@ -2,8 +2,10 @@
 import { Image } from "astro:assets";
 import Cobe from "@components/cobe.astro";
 import Link from "@components/ui/link.astro";
-import abstractDottedGlobeIllustration from "assets/abstract-dotted-globe-illustration.png";
 import purwarupa_logo from "assets/purwarupa_logo.png";
+import logo_ekraf from "assets/logo_ekraf.png";
+import logo_purwakarta_creative from "assets/logo_purwakarta_creative_center.png";
+import logo_indonesia_menggambar from "assets/logo_indonesia_menggambar.png";
 import { t } from "i18next";
 
 const { dynamic = false } = Astro.props;
@@ -38,7 +40,41 @@ const { dynamic = false } = Astro.props;
       </defs>
     </svg>
   </div>
-  <div class="sm:pt-10">
+
+  <div class="flex items-center justify-center">
+    <div class="grid grid-cols-3 justify-items-center items-center gap-4">
+      <Image
+        src={logo_ekraf}
+        alt="Logo Ekraf Purwakarta"
+        width="200"
+        height="100"
+      />
+      <Image
+        src={logo_purwakarta_creative}
+        alt="Logo Purwakarta Creative Hub"
+        width="75"
+        height="75"
+      />
+      <Image
+        src={logo_indonesia_menggambar}
+        alt="Logo Indonesia Menggambar"
+        width="75"
+        height="75"
+      />
+    </div>
+  </div>
+  <div class="flex items-center justify-center">
+    <Image
+      class="inline-block mt-12 md:mt-20"
+      src={purwarupa_logo}
+      alt="Purwa Rupa"
+      width={600}
+      height={600}
+      loading="eager"
+    />
+  </div>
+
+  <div class="sm:pt-10 mt-10">
     <div class="mx-auto max-w-7xl">
       <div class="mx-auto max-w-2xl text-center">
         <h1
@@ -65,7 +101,7 @@ const { dynamic = false } = Astro.props;
                 </span>
               </Link>
             ) : (
-              <Link href="#" style="muted">
+              <Link href="https://drive.google.com/file/d/1WxAWiu8u1qANrp3GhrBScnRqjpjQLHw7/view?usp=sharing" style="muted">
                 {t("hero.secondary_button_text")}
                 <span
                   aria-hidden="true"
@@ -82,54 +118,30 @@ const { dynamic = false } = Astro.props;
           <div class="grid grid-cols-2 gap-4">
             <a
               href="https://forms.gle/kzZghaSV184vAED47"
-			  target="_blank" 
+              target="_blank"
               class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 text-center"
               >Google Form Bid Karya Lelang</a
             >
             <a
               href="https://forms.gle/WvsvEtDEqQAywzKM8"
-			  target="_blank" 
+              target="_blank"
               class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 text-center"
               >Google Form Volunteer</a
             >
             <a
               href="https://forms.gle/XAQBmiqRutDfXJdb6"
-			  target="_blank" 
+              target="_blank"
               class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 text-center"
               >Google Form Kolaborasi</a
             >
             <a
               href="https://forms.gle/ckHyY7TtrqhZ7vPS8"
-			  target="_blank"
+              target="_blank"
               class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 text-center"
               >Google Form Workshop</a
             >
           </div>
         </div>
-      </div>
-      <div class="flex justify-center items-center mt-4 md:mt-8">
-        {
-          dynamic ? (
-            <>
-              <h2
-                class="text-2xl md:text-4xl max-w-2xl text-center font-bold tracking-tight text-black dark:text-white absolute"
-                style="line-height: 1.5"
-              >
-                {t("hero.globe_title")}
-              </h2>
-              <Cobe />
-            </>
-          ) : (
-            <Image
-              class="inline-block mt-12 md:mt-20"
-              src={purwarupa_logo}
-              alt="Purwa Rupa"
-              width={600}
-              height={600}
-              loading="eager"
-            />
-          )
-        }
       </div>
     </div>
   </div>
