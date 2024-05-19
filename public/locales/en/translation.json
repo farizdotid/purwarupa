@@ -1,0 +1,50 @@
+{
+	"hero": {
+		"title": "Hari Menggambar Nasional 2024",
+		"subtitle": "Purwa Rupa adalah jembatan antara ide dan kenyataan, dalam dunia lukis juga demikian bahwa sebuah gagasan dan kenyataan melebur menjadi satu dalam kanvas. Purwa Rupa juga mempertemukan ide dan gagasan dengan berbagai macam media menjadi satu kesatuan dalam bentuk visual yang imajinatif juga realistik",
+		"globe_title": "Hari Menggambar Nasional 2024",
+		"main_button_text": "Daftarkan Karya-mu",
+		"secondary_button_text": "Download PDF"
+	},
+	"hero_animated": {
+		"secondary_button_text": "Go to base version"
+	},
+	"header": {
+		"features": "Volunteer",
+		"pricing": "Kolaborasi",
+		"blog": "Workshop",
+		"contact": "Bid Karya Lelang",
+		"primary_button_text": "Download",
+		"secondary_button_text": "Login"
+	},
+	"features": {
+		"learn_more": "Learn more",
+		"title": "Features",
+		"subtitle": "Aktifitas Purwa Rupa",
+		"description": "Astro is a high-performance static site builder that seamlessly integrates with Tailwind CSS and Alpine.js. It allows you to build websites with ease and speed, without sacrificing on performance.",
+		"astro": "Workshop Seni Rupa",
+		"alpine": "Lelang Karya",
+		"tailwind": "Live Painting",
+		"localization": "Pertunjukan Seni, Musik, dan Panggung Karya Bebas",
+		"light_dark_mode": "Pameran",
+		"giscus": "A comments system powered by GitHub Discussions. Let visitors leave comments and reactions on your website via GitHub!",
+		"decapcms": "Open source content management for your Git workflow",
+		"rss": "RSS generated using @astrojs/rss",
+		"articlegenerator": "Use AI to generate your articles posts"
+	},
+	"faq": {
+		"title": "Frequently Asked Questions"
+	},
+	"newsletter": {
+		"title": "Subscribe to our newsletter",
+		"subtitle": "Get notified for all updates",
+		"input_placeholder": "Enter your email",
+		"button_text": "Subscribe",
+		"privacy": "We care about the protection of your data. Read our",
+		"privacy_link": "Privacy Policy."
+	},
+	"blog": {
+		"prev": "Prev",
+		"next": "Next"
+	}
+}
