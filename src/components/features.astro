@@ -6,83 +6,252 @@ import { Icon } from "astro-icon/components";
 import { t } from "i18next";
 
 const features = [
-	{
-		title: "",
-		description: "features.astro",
-		icon: "bx:bxs-paint",
-		url: "https://astro.build/",
-	},
-	{
-		title: "",
-		description: "features.alpine",
-		icon: "bx:bxs-paint",
-		url: "#",
-	},
-	{
-		title: "",
-		description: "features.tailwind",
-		icon: "bx:bxs-paint",
-		url: "#",
-	},
-	{
-		title: "",
-		description: "features.localization",
-		icon: "bx:bxs-paint",
-		url: "#",
-	},
-	{
-		title: "",
-		description: "features.light_dark_mode",
-		icon: "bx:bxs-paint",
-		url: "#",
-	},
-	
+  {
+    title: "",
+    description: "features.astro",
+    icon: "bx:bxs-paint",
+    url: "https://astro.build/",
+  },
+  {
+    title: "",
+    description: "features.alpine",
+    icon: "bx:bxs-paint",
+    url: "#",
+  },
+  {
+    title: "",
+    description: "features.tailwind",
+    icon: "bx:bxs-paint",
+    url: "#",
+  },
+  {
+    title: "",
+    description: "features.localization",
+    icon: "bx:bxs-paint",
+    url: "#",
+  },
+  {
+    title: "",
+    description: "features.light_dark_mode",
+    icon: "bx:bxs-paint",
+    url: "#",
+  },
 ];
 ---
 
 <div class="relative mx-auto max-w-5xl px-6 lg:px-8">
-	<div class="mx-auto max-w-2xl lg:text-center">
-		<p class="mt-16 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("features.subtitle")}</p>
-		</p>
-	</div>
-	<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-		<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-			{
-				features.map((item) => (
-					<div class="flex flex-col">
-						<dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
-							<div class="h-8 w-8 flex-none text-black dark:text-white">
-								<Icon name={item.icon} size={32} />
-							</div>
-							{item.title}
-						</dt>
-						<dd class="mt-4 flex flex-auto flex-col text-2xl leading-14 text-gray-900 dark:text-gray-100">
-							<p class="flex-auto">{t(item.description)}</p>
-						</dd>
-					</div>
-				))
-			}
-		</dl>
-	</div>
+  <div class="mx-auto max-w-2xl lg:text-center">
+    <p
+      class="mt-16 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl"
+    >
+      {t("features.subtitle")}
+    </p>
+  </div>
+</div>
+<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+  <dl
+    class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2"
+  >
+    {
+      features.map((item) => (
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+            <div class="h-8 w-8 flex-none text-black dark:text-white">
+              <Icon name={item.icon} size={32} />
+            </div>
+            {item.title}
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-2xl leading-14 text-gray-900 dark:text-gray-100">
+            <p class="flex-auto">{t(item.description)}</p>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</div>
 
-	<div class="mx-auto max-w-2xl lg:text-center">
-		<p class="mt-16 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
-			Harga Lelang Karya
-		</p>
-		
-		<p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
-			Nomor karya Purwa Rupa bisa dilihat di link bawah yagesya. Angka depan adalah nomor karya Anda. Contoh : <b>015_Rison</b>, maka nomor karya tersebut adalah <b>015</b>
-		</p>
+<hr
+  class="w-48 h-1 mx-auto my-12 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"
+/>
 
-		<div class="mt-8">
-			<a
-              href="https://drive.google.com/drive/folders/1mP3mGwA2dKl27fKIbitMFJgBCUUnsOLz?usp=sharing"
-              target="_blank"
-              class="px-4 py-2 bg-red-800 text-white rounded hover:bg-blue-600 text-center"
-              >Lihat Nomor Karya</a
-            >
-		</div>
-	</div>
+<div class="mx-auto max-w-2xl lg:text-center">
+  <p
+    class="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl"
+  >
+    Jadwal Kegiatan
+  </p>
+</div>
 
-	
+<ol class="mt-12 border-s border-neutral-300 dark:border-neutral-500">
+  <!--First item-->
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        25 Mei 2024 | 14.00 - selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        CEA - Fun Art
+      </p>
+    </div>
+  </li>
+
+  <!--Second item-->
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        26 Mei 2024 | 14.00 - selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Kindi Music School - Pemateri Angga Pratama & Jalu Rohana
+      </p>
+    </div>
+  </li>
+
+  <!--Third item-->
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        27 Mei 2024 | 13.00 - selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Genjreng Bareng Memi Meyhonk (Gitar Akustik). Lagu : Forever and One (
+        Haloween )
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        29 Mei 2024 - 30 Mei 2024 | 13.00 - selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Videografi Smartphone - Ihsan Kamil
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        31 Mei 2024 | 13.00 - selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Mahir Desain Grafis - Ihsan Kamil
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        01 Juni 2024 | 09.00 - 12.00
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Baba Study - PURWA-CARTA (Cheerful-ArT-An english)
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="flex-start flex items-center pt-3">
+      <div
+        class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+      >
+      </div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-300">
+        02 Juni 2024 | 10.00 - Selesai
+      </p>
+    </div>
+    <div class="mb-6 ms-4 mt-2">
+      <p
+        class="mb-3 text-neutral-100 dark:text-neutral-100 text-xl font-semibold"
+      >
+        Seni Komunikasi yang Memikat - Mochammad Iyan Sopyana
+      </p>
+    </div>
+  </li>
+</ol>
+
+<a href="https://forms.gle/7ZUwGMW75kz1R7bG7" target="_blank">
+  <button
+    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-red-800 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none block w-full"
+    type="button"
+  >
+    Google Form Pendaftaran Peserta Workshop
+  </button>
+</a>
+
+<hr
+  class="w-48 h-1 mx-auto my-12 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"
+/>
+<div class="mx-auto max-w-2xl lg:text-center">
+  <p
+    class="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl"
+  >
+    Harga Lelang Karya
+  </p>
+
+  <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
+    Nomor karya Purwa Rupa bisa dilihat di link bawah yagesya. Angka depan
+    adalah nomor karya Anda. Contoh : <b>015_Rison</b>, maka nomor karya
+    tersebut adalah <b>015</b>
+  </p>
+
+  <div class="mt-8">
+    <a
+      href="https://drive.google.com/drive/folders/1mP3mGwA2dKl27fKIbitMFJgBCUUnsOLz?usp=sharing"
+      target="_blank"
+      class="px-4 py-2 bg-red-800 text-white rounded hover:bg-blue-600 text-center"
+      >Lihat Nomor Karya</a
+    >
+  </div>
 </div>
